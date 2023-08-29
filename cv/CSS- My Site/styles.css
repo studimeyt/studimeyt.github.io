@@ -9,6 +9,7 @@ hr{
     border-top: dotted #EAF6F6 6px;
     border-bottom: none;
     border-left: none;
+    border-right: none;
     width: 5%;
     margin: 100px auto;
 }
