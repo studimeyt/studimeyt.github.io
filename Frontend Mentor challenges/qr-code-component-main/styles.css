@@ -17,7 +17,7 @@ body{
 }
 
 .qrcode-img{
-    height: 60%;
+    widht: 100%;
     display: block;
     margin: auto;
     border-radius: 5%;
