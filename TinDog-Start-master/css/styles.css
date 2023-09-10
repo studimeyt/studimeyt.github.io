@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6{
 /* Footer Section */
 #footer{
     margin: 40px auto;
-    font-size: small;
+    font-size: medium;
     background-color: #fff;
 }
 .contact-info{
