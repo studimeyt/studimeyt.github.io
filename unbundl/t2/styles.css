@@ -1,0 +1,62 @@
+/* nack : Näck */
+
+a{
+    color:black !important;
+}
+
+/* Canvas Settings */
+
+
+
+/* Navigation Bar */
+.nav-link{
+    font-size: 0.75rem !important;
+    margin: 0 12px;
+    /* color: black; */
+}
+.nav-link::after{
+    text-decoration: 1px solid red;
+}
+
+.about{
+    position: absolute;
+    right: 150px;
+}
+.navbar-brand.h1{
+    font-size: 1.75rem;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: translateX(-50%);
+}
+
+.account{
+    margin-left: 10%;
+}
+.cart{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#navigation-bar{
+    position: fixed;
+}
+
+.dropdown-custom{
+    color: black;
+}
+
+@media (max-width:1000px) {
+    .offcanvas-body{
+        line-height: 3;
+        font-weight: 200;
+        font-size: 1.25rem;
+    }
+    .nav-item{
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+
+    .about{
+        position: static;
+    }
+}
