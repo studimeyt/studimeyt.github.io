@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Discounts Available -->
-    <section id="discounts">
+    <section id="discount">
 
     </section>
 
@@ -52,8 +52,16 @@
                                   </div>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Näck Journals</a>
+                            <li class="nav-item" >
+                                <div class="dropdown dropdown-custom" id="naked-way-drop">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Näck Journals</a>
+                                    <ul class="dropdown-menu">
+                                      <li><button class="nav-link dropdown-item" type="button">Community</button></li>
+                                      <li><button class="dropdown-item nav-link" type="button">Mental Wellbeing</button></li>
+                                      <li><button class="dropdown-item nav-link" type="button">Recepies</button></li>
+                                      <li><button class="dropdown-item nav-link" type="button">Health & Fitness</button></li>
+                                    </ul>
+                                  </div>
                             </li>
                             <li class="nav-item about">
                                 <a class="nav-link" href="#">About Us</a>
@@ -70,7 +78,113 @@
             </div>
         </nav>
     </section>
-
+    <!-- Picture Carousel -->
+    <section id="carousel">
+        <div id="title-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img src="https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg" class="d-block w-100" alt="img-1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Rapid recovery. Effective hydration</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-dark btn-lg">Read More</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg" class="d-block w-100" alt="img-2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stronger than the summer sun</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-dark btn-lg">Read More</button>
+                </div>
+            </div>
+              <div class="carousel-item">
+                <img src="https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg" class="d-block w-100" alt="img-3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beyond the yoga mat</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-dark btn-lg">Read More</button>
+                </div>
+            </div>
+            </div>
+          </div>
+    </section>
+    <section id="products">
+        <p class="benifits">HONEST. CLEAN. NATURAL.</p>
+        <h5 class="choice">Choose Your Favorite</h5>
+        <div class="container-fluid overflow-hidden">
+            <div class="row flex-nowrap overflow-auto">
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/products/strongkit-01_576x.jpg" class="d-block w-100" alt="img-1">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_410x.jpg" class="d-block w-100" alt="img-2">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg" class="d-block w-100" alt="img-3">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/vegan-plant-protein-powder-nack-india-min_750x_1000x_9fe870d1-dcb5-439f-a696-2219a36f7fca_410x.webp" class="d-block w-100" alt="img-4">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/nack-astaxanthin-antioxidant-immunity-boost-1-min_410x.jpg" class="d-block w-100" alt="img-5">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/products/strongkit-01_576x.jpg" class="d-block w-100" alt="img-1">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_410x.jpg" class="d-block w-100" alt="img-2">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg" class="d-block w-100" alt="img-3">
+                </div>
+                <!-- Add more columns for additional images -->
+            </div>
+        </div>
+    </section>
+    <section id="ingredients">
+        <div class="feature-odd">
+            <img src="https://nack.life/cdn/shop/files/EAA_Home_page_500x.jpg" alt="electrolytes" class="feature-image feature-image-odd">
+            <div class="feature-text feature-text-odd"> 
+                <h5>Essential Fuel With Hydrating Electrolytes</h5>
+                <p>A potent blend of EAAs with 3.5g leucine per serving, and highly bioavailable electrolytes in pocket-sized sachets - convenient and effective fuel to maximise your performance and hydration.</p>
+            </div>
+        </div>
+        <div class="feature-even">
+            <img src="https://nack.life/cdn/shop/files/Home_Page_Image-2.jpg" alt="protein" class="feature-image feature-image-even">
+            <div class="feature-text feature-text-even">
+                <h5>Developed By Sports Nutrition Experts</h5>
+                <p>Näck’s Whey Protein is expertly formulated to fuel your workouts, boost muscle growth, enhance recovery and support weight management.</p>
+            </div>
+        </div>
+        <div class="feature-odd">
+            <img src="https://nack.life/cdn/shop/files/Nack_campaign_20220751_x730.jpg" alt="plant-protein" class="feature-image feature-image-odd">
+            <div class="feature-text feature-text-odd">
+                <h5>Perfectly Balanced Amino Acids</h5>
+                <p>Our 100% plant-based powder is formulated to fuel your body with pure protein. By blending naturally sourced yellow peas with whole grain rice, this formula provides a complete essential amino acid profile.</p>
+            </div>
+        </div>
+        <div class="feature-even">
+            <img src="https://nack.life/cdn/shop/files/nack-astaxanthin-homepage.webp" alt="immunity" class="feature-image feature-image-even">
+            <div class="feature-text feature-text-even">
+                <h5>Nature's Strongest Antioxidant</h5>
+                <p>Boost your immune system with nature’s most powerful antioxidant, Astaxanthin. Its unique and strong cellular protection capacity allows it to protect each cell against free radicals and oxidative stress.</p>
+            </div>
+        </div>
+        <div class="feature-odd">
+            <img src="https://nack.life/cdn/shop/files/meet-our-health-experts-at-nack-india_x600.webp" alt="coaches" class="feature-image feature-image-odd">
+            <div class="feature-text feature-text-odd">
+                <h5>Meet Our Experts</h5>
+                <p>Searching for an expert within nutrition, fitness, or mental health? Look no further. Our best-in-class experts are just one click away and ready to support you from the comfort of your home.</p>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+    
+    
+    
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
