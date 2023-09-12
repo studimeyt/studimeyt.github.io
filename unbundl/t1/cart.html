@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Use responsive utility classes to control alignment -->
+        <a class="navbar-brand mx-lg-auto" href="index.html">Custom Product Pack</a>
+        <div class="icons">
+            <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="cart">
+            <h2>Your Custom Pack</h2>
+            <ul id="custom-pack">
+                <!-- Selected products go here -->
+            </ul>
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+            <button id="empty-cart" class="btn btn-danger" onclick="emptyCart()">Empty Cart</button>
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://kit.fontawesome.com/d185211dd1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your JavaScript file -->
+    <script src="cart-script.js"></script>
+</body>
+</html>

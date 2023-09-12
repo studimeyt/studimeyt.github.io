@@ -1,0 +1,74 @@
+/* Add a background color to the body */
+body {
+    background-color: #E4F1FF;/* Light blue-gray */
+    text-align: center; 
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #27005D; /* Dark purple */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Style the profile and cart icons */
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+/* Style the product cards container */
+.products-container {
+    justify-content: center;
+}
+
+/* Style the product cards */
+.product-card {
+    background-color: #AED2FF; /* Light blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.product-card button {
+    background-color: #9400FF !important; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #7700AA; /* Darker purple on hover */
+}
+
+/* Add more styles as needed */
