@@ -3,28 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Linking CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <!-- Linking bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- Font Awesome Script(for icons) -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d185211dd1.js" crossorigin="anonymous"></script>
-
     <title>Natural Nutrition & Supplement Backed by Science | Näck</title>
-    
 </head>
 <body>
-    <!-- Discounts Available -->
-    <section id="discount">
-
-    </section>
-
-    <!-- Navigation Bar -->
+    <section id="discounts"></section>
     <section id="navigation-bar">
-        <nav class="navbar navbar-expand-lg fixed-top" >
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="mx-auto">
@@ -42,27 +31,22 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Health Expert</a>
                             </li>
-                            <li class="nav-item" >
-                                <div class="dropdown dropdown-custom" id="naked-way-drop">
-                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Naked Way</a>
-                                    <ul class="dropdown-menu">
-                                      <li><button class="nav-link dropdown-item" type="button">Naked Philosophy</button></li>
-                                      <li><button class="dropdown-item nav-link" type="button">Naked Research</button></li>
-                                    </ul>
-                                  </div>
-                            </li>
-
-                            <li class="nav-item" >
-                                <div class="dropdown dropdown-custom" id="naked-way-drop">
-                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Näck Journals</a>
-                                    <ul class="dropdown-menu">
-                                      <li><button class="nav-link dropdown-item" type="button">Community</button></li>
-                                      <li><button class="dropdown-item nav-link" type="button">Mental Wellbeing</button></li>
-                                      <li><button class="dropdown-item nav-link" type="button">Recepies</button></li>
-                                      <li><button class="dropdown-item nav-link" type="button">Health & Fitness</button></li>
-                                    </ul>
-                                  </div>
-                            </li>
+                            <li class="nav-item dropdown dropdown-custom">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Naked Way</a>
+                                <ul class="dropdown-menu">
+                                  <li><button class="nav-link dropdown-item" type="button">Naked Philosophy</button></li>
+                                  <li><button class="dropdown-item nav-link" type="button">Naked Research</button></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item dropdown dropdown-custom">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Näck Journals</a>
+                                <ul class="dropdown-menu">
+                                  <li><button class="nav-link dropdown-item" type="button">Community</button></li>
+                                  <li><button class="dropdown-item nav-link" type="button">Mental Wellbeing</button></li>
+                                  <li><button class="dropdown-item nav-link" type="button">Recipes</button></li>
+                                  <li><button class="dropdown-item nav-link" type="button">Health & Fitness</button></li>
+                                </ul>
+                              </li>
                             <li class="nav-item about">
                                 <a class="nav-link" href="#">About Us</a>
                             </li>
@@ -71,14 +55,11 @@
                 </div>
                 <div class="account ms-auto">
                     <a href="#"><i class="profile fa-regular fa-user"></i></a>
-                    
                     <a href="#"><i class="cart fa-solid fa-cart-shopping"></i></a>
-                    
                 </div>
             </div>
         </nav>
     </section>
-    <!-- Picture Carousel -->
     <section id="carousel">
         <div id="title-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner" >
@@ -138,7 +119,6 @@
                 <div class="col-4 col-md-2">
                     <img src="https://nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg" class="d-block w-100" alt="img-3">
                 </div>
-                <!-- Add more columns for additional images -->
             </div>
         </div>
     </section>
@@ -178,14 +158,33 @@
                 <p>Searching for an expert within nutrition, fitness, or mental health? Look no further. Our best-in-class experts are just one click away and ready to support you from the comfort of your home.</p>
             </div>
         </div>
-        
-        
-        
     </section>
+    <footer>
+        <div class="brand-name">Näck</div>
+        <div class="subscribe">
+            <h5>Subscribe</h5>
+            <form>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter email" required>
+                    <button type="submit" class="btn btn-primary">Join Us</button>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label" for="privacy-policy">
+                        I have read and accepted the Näck privacy policy.
+                    </label>
+                </div>
+            </form>
+        </div>
+    </footer>
+    
+    <!-- Copyright Footer -->
+    <footer class="copyright-footer text-center">
+        <p>&copy; 2023 Harshit Srivastava.</p>
+    </footer>
+
     
     
-    
-    <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

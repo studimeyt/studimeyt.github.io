@@ -1,35 +1,32 @@
-/* nack : Näck */
-section{
+/* Global Styles */
+section {
     margin: 5% 0;
 }
-a{
-    color:black !important;
+
+a {
+    color: black !important;
 }
 
-/* Canvas Settings */
-
-/* Discounts */
-
-
 /* Navigation Bar */
-#navigation-bar{
+#navigation-bar {
     position: static;
 }
 
-.navbar{
+.navbar {
     background-color: white;
 }
-.nav-link{
+
+.nav-link {
     font-size: 0.75rem !important;
     margin: 0 12px;
 }
 
-
-.about{
+.about {
     position: absolute;
     right: 150px;
 }
-.navbar-brand.h1{
+
+.navbar-brand.h1 {
     font-size: 1.75rem;
     position: absolute;
     left: 50%;
@@ -37,53 +34,56 @@ a{
     transform: translateX(-50%);
 }
 
-
-.cart{
+.cart {
     margin-left: 30px;
     margin-right: 10px;
 }
 
-.dropdown-item{
+.dropdown-item {
     line-height: 3;
 }
 
 /* Title Carousel */
-#carousel{
+#carousel {
     margin-top: 50px;
 }
-.carousel-caption{
+
+.carousel-caption {
     position: relative;
     top: 40%;
 }
-.carousel-caption h5{
+
+.carousel-caption h5 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.carousel-caption p{
+
+.carousel-caption p {
     font-size: 1.25rem;
 }
 
 /* Products */
-#products{
+#products {
     text-align: center;
- 
 }
-.benifits{
+
+.benifits {
     font-weight: 350;
 }
-.choice{
+
+.choice {
     font-weight: 700;
     font-size: 2rem;
     margin-bottom: 60px;
 }
-
 
 /* Ingredients */
 #ingredients {
     margin: 10%;
 }
 
-.feature-odd {
+.feature-odd,
+.feature-even {
     margin: 50px 0;
     background-color: #fff;
     padding: 20px;
@@ -93,13 +93,7 @@ a{
 }
 
 .feature-even {
-    margin: 50px 0;
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse; /* Reverse the order for even elements */
+    flex-direction: row-reverse;
 }
 
 .feature-image-odd,
@@ -124,31 +118,88 @@ a{
     text-align: left;
 }
 
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.subscribe {
+    text-align: right;
+}
+
+.subscribe h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe form .input-group {
+    max-width: 300px;
+}
+
+.subscribe form .btn-primary {
+    background-color: #FFA500; /* Orange-yellow color */
+    border-color: #FFA500;
+}
+
+.subscribe form .form-check-label {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Copyright Footer Styles */
+.copyright-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-footer p {
+    margin: 0;
+    font-size: 0.6rem;
+}
+
+
+
+
 @media (max-width: 1000px) {
     .offcanvas-body {
         line-height: 3;
         font-weight: 200;
         font-size: 1.25rem;
     }
-    
+
     .nav-item {
         border-bottom: 1px solid rgb(225, 225, 225);
     }
-    
+
     .account,
     .about {
         position: static;
     }
-    
+
     .dropdown-item {
         line-height: 1.75;
     }
-    
+
     /* Ingredients section styles within the media query */
     #ingredients {
         margin: 10%;
     }
-    
+
     .feature-odd,
     .feature-even {
         margin: 50px 0;
@@ -156,18 +207,18 @@ a{
         padding: 20px;
         display: block;
     }
-    
+
     .feature-image-odd,
     .feature-image-even {
         width: 100%;
     }
-    
+
     .feature-text-odd,
     .feature-text-even {
         width: 100%;
         padding: 20px;
     }
-    
+
     .feature-text-odd h5,
     .feature-text-even h5,
     .feature-text-odd p,
@@ -175,4 +226,3 @@ a{
         text-align: center;
     }
 }
-
