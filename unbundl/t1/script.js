@@ -1,8 +1,20 @@
 // Sample product data
 const products = [
-    { name: "Product 1", price: 10.99 },
-    // Define Products 2 to 12 here
+    { name: "Whittaker's", price: 10.99 },
+    { name: "Toblerone", price: 12.99 },
+    { name: "Hershey's", price: 8.99 },
+    { name: "m&m's", price: 9.99 },
+    { name: "Maltesers", price: 11.99 },
+    { name: "KitKat", price: 7.99 },
+    { name: "Chupa Chups", price: 13.99 },
+    { name: "Werther's Original", price: 6.99 },
+    { name: "Godiva", price: 14.99 },
+    { name: "E. Wedel", price: 5.99 },
+    { name: "Lindt", price: 16.99 },
+    { name: "Cadbury", price: 4.99 }
 ];
+
+
 
 // Initialize variables
 const customPack = [];

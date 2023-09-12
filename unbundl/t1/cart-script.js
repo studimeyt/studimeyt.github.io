@@ -14,8 +14,10 @@ function displayCustomPack() {
     customPack.forEach(product => {
         const listItem = document.createElement("li");
         listItem.textContent = `${product.name} - $${product.price.toFixed(2)}`;
+        listItem.classList.add("list-group-item"); // Add the list-group-item class
         customPackList.appendChild(listItem);
     });
+
 
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }

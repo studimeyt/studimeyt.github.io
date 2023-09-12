@@ -12,7 +12,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark bg-dark">
         <!-- Use responsive utility classes to control alignment -->
-        <a class="navbar-brand mx-lg-auto" href="index.html">Custom Product Pack</a>
+        <a class="navbar-brand mx-lg-auto" href="index.html">Chocolate Factory</a>
         <div class="icons">
             <a href="#" class="profile-icon"><i class="fas fa-user"></i></a>
         </div>
@@ -21,10 +21,10 @@
     <div class="container mt-5">
         <div class="cart">
             <h2>Your Custom Pack</h2>
-            <ul id="custom-pack">
+            <ul class="list-group" id="custom-pack">
                 <!-- Selected products go here -->
             </ul>
-            <p>Total Price: $<span id="total-price">0.00</span></p>
+            <p class="btn btn-dark total">Total Price: $<span id="total-price">0.00</span></p>
             <button id="empty-cart" class="btn btn-danger" onclick="emptyCart()">Empty Cart</button>
         </div>
     </div>
