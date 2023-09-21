@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var selectedSec = sec.options[sec.selectedIndex].textContent;
         var selectedAmPm = ampm.options[ampm.selectedIndex].textContent;
 
-        var alarmTimeStr = selectedHr + ":" + selectedMin + ":" + selectedSec + " " + selectedAmPm;
+        var alarmTimeStr = selectedHr + " : " + selectedMin + " : " + selectedSec + "  " + selectedAmPm;
 
         addElementToList(alarmTimeStr);
     });
