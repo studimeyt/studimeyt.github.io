@@ -1,12 +1,18 @@
+// Waiting for everything to be loaded first then applying JS
 document.addEventListener("DOMContentLoaded", function () {
     var submitBtn = document.querySelector("#submit");
+
     var currTime = "";
     var alarmTime = [];
+
+    // Audio file
     var audio = new Audio("audio/alarm1.wav");
 
     submitBtn.addEventListener("click", function (event) {
+        // Preventing page refresh afetr form submission
         event.preventDefault();
 
+        // Selecting required elements
         var hr = document.querySelector("#hours");
         var min = document.querySelector("#minutes");
         var sec = document.querySelector("#seconds");
@@ -17,14 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
         var selectedSec = sec.options[sec.selectedIndex].textContent;
         var selectedAmPm = ampm.options[ampm.selectedIndex].textContent;
 
+        // Values being appended to the array
         var alarmTimeStr = selectedHr + " : " + selectedMin + " : " + selectedSec + "  " + selectedAmPm;
 
         addElementToList(alarmTimeStr);
     });
 
+
     function addElementToList(timeStr) {
+        // Selecting Elements
         var alarmsList = document.querySelector("#active-alarms");
         var newDiv = document.createElement("div");
+
         newDiv.classList.add("li-div");
 
         var listItem = document.createElement("li");
@@ -61,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTime() {
+        // Getting current date and time
         var today = new Date();
         var hr = today.getHours();
         var min = today.getMinutes();
@@ -78,11 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function alarmRingCheck() {
+        // Checking when to ring the alarm
         if (alarmTime.length > 0) {
             alarmTime.forEach(function (alarm) {
                 if (currTime === alarm) {
                     // Alarm is ringing
-                    console.log("Alarm is ringing!");
+                    // console.log("Alarm is ringing!");
                     audio.play();
                 }
             });
