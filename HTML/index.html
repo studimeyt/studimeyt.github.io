@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm Clock</title>
+
+    <!-- CSS Linking -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
     <div class="container">
+        
         <div class="clock">
+            <!-- Working Clock -->
             <h1> <i class="fa-regular fa-clock"></i> Alarm Clock</h1>
             <div class="current-time">
                 HH : MM : SS <span>AMPM</span>
             </div>
+
+            <!-- Form for creating a new alarm -->
             <form>
                 <div class="alarm-time">
                     <b>Alarm Time:</b>
-                    <div class="dropstart">
+                    <div class="dropdown">
                         
                         <label for="hours">Hr:</label>
                         <select name="hours" id="hours" required="">
@@ -174,9 +182,11 @@
                 </div>
                 
                 </div>
+                <!-- Submit Button -->
                 <button type="submit" id="submit" class="btn btn-outline-light setalarm">Set Alarm</button>
             </form>
             <div class="alarms">
+                <!-- List for new created alarms -->
                 <h5>Upcoming Alarms:</h5>
                 <ul class="active-alarms" id ="active-alarms">    
                     <!-- <li>No Alarms Yet</li> -->
@@ -185,8 +195,12 @@
             
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Fontawesome JS(for icons) -->
     <script src="https://kit.fontawesome.com/d185211dd1.js" crossorigin="anonymous"></script>
+    <!-- Our JS -->
     <script charset="utf-8" type="text/javascript" src="index.js"></script>
 </body>
 </html>
