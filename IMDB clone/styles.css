@@ -1,0 +1,108 @@
+body{
+    background-color: #000000;
+    margin: 0;
+}
+
+/* ID selectors */
+#brand-name{
+    width: 5rem;
+    height: 2.75rem;
+    border-radius: 20%;
+    margin-left: 1.5rem;
+    margin-bottom: 0.45rem;
+}
+
+/* Class slectors */
+
+.bar-home{
+    width: 30rem;
+    height: 3rem;
+}
+
+.background-home{
+    width: 100vw;
+    height: 96vh;
+    background-image: url('/images/bkg-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    filter: brightness(100%);
+}
+
+.btn-home{
+    width: 4rem;
+}
+
+.div-center{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 60rem;
+}
+
+.cards-display{
+    margin: 4rem 5rem;
+}
+
+.footer-home{
+    color: white;
+}
+
+.img-home{
+    display: block;
+    width: 20rem;
+    border-radius: 10%;
+    margin: 4rem auto;
+}
+
+.search-bar{
+    background-color: white;
+}
+.search-bar-big{
+    margin: 1rem 3rem ;
+    display: block;
+}
+
+.search-bar::placeholder{
+    color: black;
+}
+.search-btn:hover{
+    background-color: #DBA506;
+    border-color: black;
+}
+.search-form{
+    margin-right: 3rem;
+}
+
+/* Favorites  */
+.fav-list{
+    color: white;
+    width: 80vw;
+    margin: 30px auto;
+}
+
+.fav-item{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 0.4fr 0.6fr;
+    gap: 20px;
+    height: 15rem;
+}
+
+.fav-item>img{
+    grid-row: span 2;
+    margin: 10px;
+}
+
+.fav-item>h6{
+    margin: 10px;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.fav-item>p{
+    margin: 10px;
+    font-size: 1rem;
+}
