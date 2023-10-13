@@ -1,4 +1,4 @@
-## https://studimeyt.github.io/Assignment-2/
+## https://studimeyt.github.io/Assignment-2/home.html
 
 # Using HTMl, CSS, Vanilla JS
 
