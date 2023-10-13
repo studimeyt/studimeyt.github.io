@@ -1,5 +1,5 @@
-## 
+## https://studimeyt.github.io/Assignment-2/
 
 # Using HTMl, CSS, Vanilla JS
 
-An IMDb clone that can search for movies
+A website that can search for movies and help you mark your favorite movies
