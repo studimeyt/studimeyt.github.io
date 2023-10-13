@@ -1,10 +1,11 @@
-body{
+/* Body selector */
+body {
     background-color: #000000;
     margin: 0;
 }
 
 /* ID selectors */
-#brand-name{
+#brand-name {
     width: 5rem;
     height: 2.75rem;
     border-radius: 20%;
@@ -12,14 +13,14 @@ body{
     margin-bottom: 0.45rem;
 }
 
-/* Class slectors */
+/* Class selectors */
 
-.bar-home{
+.bar-home {
     width: 30rem;
     height: 3rem;
 }
 
-.background-home{
+.background-home {
     width: 100vw;
     height: 96vh;
     background-image: url('/images/bkg-img.jpg');
@@ -30,59 +31,60 @@ body{
     filter: brightness(100%);
 }
 
-.btn-home{
+.btn-home {
     width: 4rem;
 }
 
-.div-center{
+.div-center {
     justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 60rem;
 }
 
-.cards-display{
-    margin: 4rem 5rem;
+.cards-display {
+    margin: 5rem 6rem;
 }
 
-.footer-home{
+.footer-home {
     color: white;
 }
 
-.img-home{
+.img-home {
     display: block;
     width: 20rem;
     border-radius: 10%;
     margin: 4rem auto;
 }
 
-.search-bar{
+.search-bar {
     background-color: white;
 }
-.search-bar-big{
-    margin: 1rem 3rem ;
+.search-bar-big {
+    margin: 1rem 3rem;
     display: block;
 }
 
-.search-bar::placeholder{
+.search-bar::placeholder {
     color: black;
 }
-.search-btn:hover{
+
+.search-btn:hover {
     background-color: #DBA506;
     border-color: black;
 }
-.search-form{
+.search-form {
     margin-right: 3rem;
 }
 
 /* Favorites  */
-.fav-list{
+.fav-list {
     color: white;
     width: 80vw;
     margin: 30px auto;
 }
 
-.fav-item{
+.fav-item {
     margin: 30px;
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
@@ -91,18 +93,86 @@ body{
     height: 15rem;
 }
 
-.fav-item>img{
+.fav-item>img {
     grid-row: span 2;
     margin: 10px;
 }
 
-.fav-item>h6{
+.fav-item>h6 {
     margin: 10px;
     font-size: 1.75rem;
     text-align: center;
 }
 
-.fav-item>p{
+.fav-item>p {
     margin: 10px;
     font-size: 1rem;
+}
+
+.favorite-active {
+    background-color: #000000;
+    color: #DBA506;
+    border-color: #DBA506;
+}
+
+.fav-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.movie-pic {
+    height: 30rem;
+    width: auto;
+}
+.fav-movie-pic {
+    height: 14rem;
+    width: auto;
+}
+
+#fav-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.card-body {
+    height: 12rem;
+}
+
+/* Responsive CSS for small screens (e.g., mobile devices) */
+@media screen and (max-width: 1000px) {
+    .fav-list {
+        width: 90vw;
+    }
+    .fav-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.7fr;
+        height: auto;
+    }
+    .fav-movie-pic {
+        height: 18rem;
+        margin: 0px auto !important;
+    }
+}
+
+.invisible-button {
+    background: transparent;
+    border: none;
+    color: transparent;
+    color: gray;
+}
+
+.invisible-button:hover {
+    color: white;
+}
+
+.home-link {
+    text-decoration: none;
+    color: gray;
+    margin-right: 0.2rem;
+    padding-top: 3rem !important;
+}
+.home-link:hover {
+    color: white;
 }

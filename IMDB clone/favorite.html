@@ -19,31 +19,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="home-link" aria-current="page" href="home.html">Home</a>
+                        </li>
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">Movies</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="favorite.html">Favorties</a>
+                        <a class="nav-link active" href="">Favorties</a>
                       </li>
                     </ul>
                     <form class="d-flex search-form" role="search">
-                        <input class="form-control me-2 search-bar" type="search" placeholder="Search IMDb clone" aria-label="Search">
+                        <input list="search-suggestions" class="form-control me-2 search-bar" type="search" placeholder="Search IMDb clone" aria-label="Search">
                         <button class="btn btn-outline-light search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
+                    <datalist id="search-suggestions">
+                    
+                    </datalist>
                 </div>
             </div>
         </nav>
 
         <!-- Fav movies list -->
         <div class="fav-list">
-            <div class="fav-item">
-                <img src="..." alt="...">
-                <h6>Movie Title</h6>
-                <p>movie description in many lines......</p>
-            </div>
+            <h3 id="fav-heading"><i class="fa-solid fa-clapperboard"></i> Your Favorites</h3>
         </div>
 
         <!-- Copyright Footer -->
@@ -57,11 +53,12 @@
             </div>
         </footer>
         
+        <script src="home.js" type="text/javascript"></script>
         <!-- FontAwesome JS -->
         <script src="https://kit.fontawesome.com/d185211dd1.js" crossorigin="anonymous"></script>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="index.js" type="text/javascript"></script>
+        <script src="favorite.js" type="text/javascript"></script>
     </body>
 </html>
 
