@@ -158,7 +158,6 @@ body {
 
 @media screen and (max-width: 950px) {
     .background-home {
-        width: 100vw;
         height: 95vh;
         background-size: cover;
     }
