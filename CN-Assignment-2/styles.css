@@ -156,6 +156,28 @@ body {
     }
 }
 
+@media screen and (max-width: 950px) {
+    .background-home {
+        width: 100vw;
+        height: 80vh;
+        background-size: cover;
+    }
+    
+    .brand-img {
+        text-align: center;
+    }
+    
+    .img-home {
+        margin: 3rem auto;
+        width: 18rem;
+    }
+
+    .bar-home{
+        max-width: 60vw;
+    }
+    
+}
+
 .invisible-button {
     background: transparent;
     border: none;
