@@ -23,7 +23,7 @@ body {
 .background-home {
     width: 100vw;
     height: 96vh;
-    background-image: url('images/bkg-img.jpg');
+    background-image: url('/images/bkg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -146,19 +146,20 @@ body {
         width: 90vw;
     }
     .fav-item {
+        border: 1px solid whitesmoke;
+        margin: 3rem 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.7fr;
         height: auto;
+        padding: 30px 10px;
+        border-radius: 5%;
     }
     .fav-movie-pic {
         height: 18rem;
         margin: 0px auto !important;
     }
-}
-
-@media screen and (max-width: 950px) {
     .background-home {
-        height: 95vh;
+        height: 96vh;
         background-size: cover;
     }
     
@@ -174,7 +175,12 @@ body {
     .bar-home{
         max-width: 60vw;
     }
-    
+    .fav-item>p {
+        text-align: center;
+    }
+    .cards-display {
+        margin: 3rem 2rem;
+    }
 }
 
 .invisible-button {
@@ -197,3 +203,5 @@ body {
 .home-link:hover {
     color: white;
 }
+
+
