@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function callForPlot(id) {
             const key = "56420f32";
-            const api_website = "http://www.omdbapi.com/?apikey=" + key + "&i=" + id;
+            const api_website = "https://www.omdbapi.com/?apikey=" + key + "&i=" + id;
             apiFetch(api_website);
         }
 
