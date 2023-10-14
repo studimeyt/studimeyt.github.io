@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // API URL for movie search
-    const apiUrl = "http://www.omdbapi.com/?apikey=56420f32&s=";
+    const apiUrl = "https://www.omdbapi.com/?apikey=56420f32&s=";
   
     // DOM elements
     const searchInput = document.querySelector(".search-bar");
