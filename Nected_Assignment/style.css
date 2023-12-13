@@ -1,0 +1,167 @@
+/* Headings */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+nav{
+    margin-bottom: 3%;
+    background:linear-gradient(to right, rgb(38, 139, 255,0.2), white, rgb(38, 139, 255,0.2));
+    text-align: center;
+}
+nav img{
+    max-width: 200px;
+}
+
+main{
+    margin: 0 30px;
+    flex: 1;
+}
+
+
+
+button{
+    width: 25%;
+    height: 15%;
+    border-radius: 10px;
+    background-color:rgb(38, 139, 255);
+    color: white;
+    font-size: larger;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+h1{
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+hr {
+    height: 1px;
+    width: 90%;
+    background: linear-gradient(to right, white, rgb(38, 139, 255), white);
+    border: none;
+}
+
+
+/* ID's */
+#address{
+    width: auto;
+    height: 100px;
+}
+
+#address img{
+    width: 100px;
+}
+
+#social_links{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    text-align: end;
+}
+
+#yt{
+    margin-right: 30px;
+}
+
+#social_links p a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* classes */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 125px;
+    margin: 0 25px;
+    color: gray;
+}
+
+.image_logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.invite_info{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.question{
+    color: gray;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.question a{
+    text-decoration: none;
+    color: rgb(38, 139, 255);
+}
+
+/* Tablet Screen */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    nav {
+        text-align: left;
+        background: none;
+        border-bottom: 1px solid rgb(38, 139, 255);
+    }
+    button{
+        width: 40%;
+        height: 17%;
+        border-radius: 12px;
+    }
+    #social_links{
+        min-width: 150px;
+        max-width: 175px;
+    }
+    footer{
+        font-size: 13px;
+    }
+
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 28px;
+    }
+    .invite_info{
+        font-size: 18px;
+    }
+    nav {
+        border-bottom: 1px solid rgb(38, 139, 255);
+    }
+    .question{
+        font-size: 13px;
+    }
+    main{
+        text-align: center;
+    }
+    button{
+        width: 60%;
+        height: 20%;
+        border-radius: 12px;
+    }
+    #social_links{
+        min-width: 150px;
+        max-width: 175px;
+    }
+    footer{
+        font-size: 13px;
+        margin: 0;
+    }
+
+
+
+}
