@@ -161,6 +161,9 @@ hr {
         font-size: 13px;
         margin: 0;
     }
+    .grid-container{
+        margin: 0 10px;
+    }
 
 
 
